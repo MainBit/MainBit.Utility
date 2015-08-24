@@ -1,0 +1,27 @@
+﻿Name: MainBit.Utility
+AntiForgery: enabled
+Author: The MainBit Team
+Website: http://mainbit.com
+Version: 1.9
+OrchardVersion: 1.9.1
+Description: Description for the module
+Features:
+    MainBit.Utility:
+		Name: MainBit.Utility
+        Description: Description for feature MainBit.Utility.
+		Category: Content
+	MainBit.Utility.Rules
+		Name: MainBit.Utility.Rules
+        Description: Description for feature MainBit.Utility.
+		Category: Widget
+		Dependencies: Orchard.Widgets
+	MainBit.Utility.Projections
+		Name: MainBit.Utility.Projections
+        Description: Provides projection filter by container Id.
+		Category: Content
+		Dependencies: Orchard.Projections, Orchard.Forms
+	MainBit.Utility.Taxonomies
+		Name: MainBit.Utility.Taxonomies
+        Description: Provides projection filter by container Id.
+		Category: Content
+		Dependencies: Orchard.Taxonomies, Orchard.Projections, Orchard.Tokens
