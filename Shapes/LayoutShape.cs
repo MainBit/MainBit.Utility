@@ -37,10 +37,12 @@ namespace MainBit.Utility.Shapes
                     displaying.ShapeMetadata.Alternates.Add("Layout__Name__" + EncodeAlternateElement(httpContext.Request["layout-name"]));
                 }
 
-                // add not found alternate
+                // add not found alternate and class
                 if (httpContext.Response.StatusCode == 404)
                 {
                     displaying.ShapeMetadata.Alternates.Add("Layout__NotFound");
+                    var pageClassBuilder = workContext.Resolve<IPageClassBuilder>();
+                    pageClassBuilder.AddClassNames("not-found");
                 }
 
                 // add home class
