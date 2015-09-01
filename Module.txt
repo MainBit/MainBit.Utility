@@ -25,3 +25,8 @@ Features:
         Description: Provides projection filter by container Id.
 		Category: Content
 		Dependencies: Orchard.Taxonomies, Orchard.Projections, Orchard.Tokens
+	MainBit.Utility.Tokens
+		Name: MainBit.Utility.Tokens
+        Description: Provides RawUrl token.
+		Category: Content
+		Dependencies: Orchard.Tokens
