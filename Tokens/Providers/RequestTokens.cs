@@ -21,19 +21,20 @@ namespace MainBit.Utility.Tokens.Providers
 
         public void Describe(DescribeContext context) {
             context.For("Request")
-                .Token("RawUrl", T("Raw url"), T("The raw url"))
+                .Token("UrlReferrer", T("Url referrer"), T("The url referrer"))
             ;
         }
 
         public void Evaluate(EvaluateContext context) {
-            if (_workContextAccessor.GetContext().HttpContext == null) {
+            if (_workContextAccessor.GetContext().HttpContext == null)
+            {
                 return;
             }
 
-            context.For<HttpRequestBase>("Request")
-                .Token("RawUrl",
+            context.For("Request", _workContextAccessor.GetContext().HttpContext.Request)
+                .Token("UrlReferrer",
                     (request) => { 
-                        return request.RawUrl ?? string.Empty;
+                        return request.UrlReferrer;
                     });
         }
     }

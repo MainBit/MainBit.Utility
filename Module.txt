@@ -27,6 +27,6 @@ Features:
 		Dependencies: Orchard.Taxonomies, Orchard.Projections, Orchard.Tokens
 	MainBit.Utility.Tokens
 		Name: MainBit.Utility.Tokens
-        Description: Provides RawUrl token.
+        Description: Provides UrlReferrer token.
 		Category: Content
 		Dependencies: Orchard.Tokens
