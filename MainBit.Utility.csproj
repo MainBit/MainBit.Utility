@@ -83,44 +83,9 @@
       <Name>Orchard.Core</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Orchard.Forms\Orchard.Forms.csproj">
-      <Project>{642a49d7-8752-4177-80d6-bfbbcfad3de0}</Project>
-      <Name>Orchard.Forms</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Orchard.Projections\Orchard.Projections.csproj">
-      <Project>{5531e894-d259-45a3-aa61-26dbe720c1ce}</Project>
-      <Name>Orchard.Projections</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Orchard.Taxonomies\Orchard.Taxonomies.csproj">
-      <Project>{e649ea64-d213-461b-87f7-d67035801443}</Project>
-      <Name>Orchard.Taxonomies</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Orchard.Tokens\Orchard.Tokens.csproj">
-      <Project>{6f759635-13d7-4e94-bcc9-80445d63f117}</Project>
-      <Name>Orchard.Tokens</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Orchard.Widgets\Orchard.Widgets.csproj">
-      <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
-      <Name>Orchard.Widgets</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Helpers\StringExtensions.cs" />
-    <Compile Include="Projections\Providers\Filters\ContentIdFilter.cs" />
-    <Compile Include="Projections\Providers\Filters\ContainerIdFilter.cs" />
-    <Compile Include="Rules\PartRuleProvider.cs" />
-    <Compile Include="Rules\QueryStringRuleProvider.cs" />
     <Compile Include="Services\ICurrentContentAccessor.cs" />
-    <Compile Include="Shapes\LayoutShape.cs" />
-    <Compile Include="Taxonomies\Projections\TermsFilter.cs" />
-    <Compile Include="Taxonomies\Projections\TermsFilterForms.cs" />
-    <Compile Include="Taxonomies\Tokens\TaxonomyTokens.cs" />
-    <Compile Include="Tokens\Providers\RequestTokens.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
