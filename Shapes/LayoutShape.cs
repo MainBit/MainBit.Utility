@@ -52,7 +52,8 @@ namespace MainBit.Utility.Shapes
                     pageClassBuilder.AddClassNames("home");
                 }
 
-                // add controller alternates
+
+                // add routing alternates
                 //var routeValues = httpContext.Request.RequestContext.RouteData.Values;
                 //displaying.ShapeMetadata.Alternates.Add(BuildShapeName(routeValues, "area"));
                 //displaying.ShapeMetadata.Alternates.Add(BuildShapeName(routeValues, "area", "controller"));
@@ -70,6 +71,7 @@ namespace MainBit.Utility.Shapes
             return alternateElement.Replace("-", "__").Replace(".", "_");
         }
 
+        // add routing alternates
         //private static string BuildShapeName(System.Web.Routing.RouteValueDictionary values, params string[] names)
         //{
         //    return "Layout__" +
