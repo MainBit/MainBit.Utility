@@ -1,0 +1,29 @@
+﻿msgid "Add"
+msgstr "Добавить"
+
+msgid "Add a {0}"
+msgstr "Добавить {0}"
+
+msgid "Add an {0}"
+msgstr "Добавить {0}"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Create a {0}"
+msgstr "Создать {0}"
+
+msgid "Create an {0}"
+msgstr "Создать {0}"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "List of {0}"
+msgstr "Список {0}"

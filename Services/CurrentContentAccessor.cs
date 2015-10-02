@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Routing;
+using MainBit.Utility.Extensions;
 
 namespace MainBit.Utility.Services
 {
@@ -31,30 +32,10 @@ namespace MainBit.Utility.Services
             }
         }
 
-        private List<string> _idKeys = new List<string> { "id", "blogId" };
-        public virtual List<string> IdKeys
-        {
-            get { return _idKeys; }
-        }
-
         private ContentItem GetCurrentContentItem()
         {
-            var contentId = GetCurrentContentItemId();
+            var contentId = _requestContext.RouteData.Values.GetContentItemId();
             return contentId == null ? null : _contentManager.Get(contentId.Value);
-        }
-
-        private int? GetCurrentContentItemId()
-        {
-
-            object id = null;
-            if (IdKeys.Any(idKey => _requestContext.RouteData.Values.TryGetValue(idKey, out id)))
-            {
-                int contentId;
-                if (int.TryParse(id as string, out contentId))
-                    return contentId;
-            }
-
-            return null;
         }
     }
 }
