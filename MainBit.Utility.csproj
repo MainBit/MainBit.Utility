@@ -99,6 +99,11 @@
       <Name>Orchard.Core</Name>
       <Private>false</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Orchard.Projections\Orchard.Projections.csproj">
+      <Project>{5531e894-d259-45a3-aa61-26dbe720c1ce}</Project>
+      <Name>Orchard.Projections</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\HtmlExtensions.cs" />
@@ -107,6 +112,7 @@
     <Compile Include="Extensions\UrlExtensions.cs" />
     <Compile Include="Services\CurrentContentAccessor.cs" />
     <Compile Include="Services\ICurrentContentAccessor.cs" />
+    <Compile Include="Extensions\IHqlQueryExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Localization\ru-RU\orchard.module.po" />
